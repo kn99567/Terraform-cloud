@@ -9,7 +9,7 @@ locals {
   # cluster details
   wade_cluster = {
     cluster_name                = "wade-gke"
-    cluster_version             = "1.27.4-gke.900"
+    cluster_version             = "1.27.5-gke.200"
     release_channel             = "UNSPECIFIED" # in order to disable auto upgrade
     subnet_name                 = "wade-gke"
     subnet_range                = "10.254.71.0/24"
