@@ -55,6 +55,7 @@ module "wade-gke" {
   name       = local.wade_cluster.cluster_name
 
   kubernetes_version     = local.wade_cluster.cluster_version
+  release_channel        = local.wade_cluster.release_channel
   region                 = local.wade_cluster.region
   network                = google_compute_network.default.name
   subnetwork             = google_compute_subnetwork.wade-gke.name
