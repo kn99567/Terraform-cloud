@@ -37,6 +37,15 @@ resource "google_service_account" "sa-wade-test" {
   display_name = "sa-wade-test"
 }
 
+resource "google_project_service" "gcp_resource_manager_api" {
+  project = local.project.project_id
+  service = "cloudresourcemanager.googleapis.com"
+}
+
+resource "google_project_service" "gcp_container_api" {
+  project = local.project.project_id
+  service = "container.googleapis.com"
+}
 
 module "wade-gke" {
   source = "terraform-google-modules/kubernetes-engine/google//modules/beta-private-cluster"

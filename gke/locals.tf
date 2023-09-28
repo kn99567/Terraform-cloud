@@ -9,7 +9,7 @@ locals {
   # cluster details
   wade_cluster = {
     cluster_name                = "wade-gke"
-    cluster_version             = "1.22.12-gke.500"
+    cluster_version             = "latest"
     subnet_name                 = "wade-gke"
     subnet_range                = "10.254.71.0/24"
     secondary_ip_range_pods     = "172.20.72.0/21"
