@@ -83,4 +83,8 @@ module "wade-gke" {
   node_pools_taints       = local.wade_cluster.node_pools_taints
   node_pools_tags         = local.wade_cluster.node_pools_tags
 
+  depends_on = [
+    google_project_service.gcp_resource_manager_api,
+    google_project_service.gcp_resource_manager_api
+  ]
 }

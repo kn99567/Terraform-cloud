@@ -27,7 +27,7 @@ locals {
         max_pods_per_node  = 64
         disk_size_gb       = 100
         disk_type          = "pd-standard"
-        image_type         = "COS"
+        image_type         = "COS_CONTAINERD"
         auto_repair        = true
         auto_upgrade       = false
         preemptible        = false
