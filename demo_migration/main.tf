@@ -2,7 +2,7 @@ locals {
   project_id           = "adept-presence-396401"
   project_region       = "us-central1"
   bucket_location      = "US"
-  bucket_lifecycle_age = 270
+  bucket_lifecycle_age = 90
 }
 
 resource "google_service_account" "sa-tfcloud-demo" {
