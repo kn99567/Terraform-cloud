@@ -86,6 +86,6 @@ module "wade-gke" {
 
   depends_on = [
     google_project_service.gcp_resource_manager_api,
-    google_project_service.gcp_resource_manager_api
+    google_project_service.gcp_container_api
   ]
 }
