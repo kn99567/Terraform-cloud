@@ -7,9 +7,6 @@ Welcome to the Terraform Cloud Demos repository! This repository contains demons
 - [Prerequisites](#prerequisites)
 - [Folder Structure](#folder-structure)
 - [Getting Started](#getting-started)
-- [Demo Descriptions](#demo-descriptions)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Prerequisites
 
